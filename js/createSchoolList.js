@@ -5,7 +5,7 @@ document.addEventListener('dbCreated', function () {
     let school = {};
     let event = new Event('schoolListCreated');
 
-    /// Get all school from DB
+    // Get all school from DB
     DB.allDocs({
         include_docs: true,
     }).then(function (result) {
@@ -14,15 +14,14 @@ document.addEventListener('dbCreated', function () {
         result.rows.forEach(function (row) {
 
             // if the title is not on the list, add it
-            if (!school[row.doc.title]) {
-                school[row.doc.title] = row.doc.title;
+               if (!school[row.doc.name]) {
+                school[row.doc.name] = row.doc.name;
 
                 // Create option for select
                 option = document.createElement('option');
-                option.value = row.doc.title;
-                option.innerHTML = row.doc.title;
+                option.value = row.doc.name;
+                option.innerHTML = row.doc.name;
                 document.getElementById('school-select').appendChild(option);
-
 
             }
 

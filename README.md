@@ -4,7 +4,7 @@ Study project on NoSQL databases, using PHP 8.2 and XAMPP to run the PouchDB dat
 
 ## Installation
 
-### 1. Install brew (MacOS)
+### 1. Install brew (4.0.X) (MacOS)
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -18,7 +18,7 @@ Read more about brew installation [here](https://brew.sh/).
 
 > Read more about brew requirements [here](https://docs.brew.sh/Installation#macos-requirements).
 
-### 2. Install XAMPP using Brew (MacOS)
+### 2. Install XAMPP (8.2.x) using Brew (MacOS)
 
 1. Install XAMPP
     ```bash
@@ -96,3 +96,6 @@ Read more about brew installation [here](https://brew.sh/).
     open http://localhost/NoSqlTp
     ```
    > Note: You can change the destination of the symbolic link to any folder you want.
+
+## 4. Import the database
+> The database is automatically imported when you open the project in your web browser. is magique ! :D
